@@ -32,10 +32,10 @@ export function showInputError(el) {
 
 export function removeInputError(el) {
   const parent = el.parentElement;
-  const err = parent.querySelector('.invalid-feedback');
+  const err = parent.querySelector(".invalid-feedback");
 
   if (!err) return;
 
-  el.classList.remove('is-invalid');
+  el.classList.remove("is-invalid");
   parent.removeChild(err);
 }
