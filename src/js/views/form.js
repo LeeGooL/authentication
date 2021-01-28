@@ -15,7 +15,9 @@ function inputErrorTemplate(msg) {
  */
 
 export function showInputError(el) {
+  console.log(el);
   const parent = el.parentElement;
+  console.log(parent);
   const msg = el.dataset.invalidMessage || "Invalid input";
   const template = inputErrorTemplate(msg);
 
