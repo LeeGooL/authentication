@@ -18,6 +18,7 @@ function notifyContainerTemplate() {
 
 function createNotifyContainer() {
   const template = notifyContainerTemplate();
+  
   document.body.insertAdjacentHTML("afterbegin", template);
 }
 
@@ -68,5 +69,6 @@ export function closeNotify(index) {
   }
 
   const container = getContainer();
+
   container.removeChild(alert);
 }

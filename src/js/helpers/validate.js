@@ -4,7 +4,7 @@ const regExpDic = {
 };
 
 /**
- * Function validate. Check input on RegExp provided in regExpDic by input data-required type
+ * Function validate. Check Input on RegExp provided in regExpDic by input data-required type
  * @param {HTMLInputElement} el
  * @returns {Boolean} - Return true if input valid or doesn't has data-required attr
  */

@@ -15,6 +15,7 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   onSubmit();
 });
+
 inputs.forEach((el) =>
   el.addEventListener("focus", () => removeInputError(el))
 );
@@ -23,6 +24,7 @@ inputs.forEach((el) =>
 async function onSubmit() {
   const isValidForm = inputs.every((el) => {
     const isValidInput = validate(el);
+
     if (!isValidInput) {
       showInputError(el);
     }
@@ -36,8 +38,9 @@ async function onSubmit() {
     await login(inputEmail.value, inputPassword.value);
 
     form.reset();
+
     notify({ msg: "Login success", className: "alert-success" });
   } catch (err) {
-    notify({ msg: "Login faild", className: "alert-danger" });
+    notify({ mas: "Login faild", className: "alert-danger" });
   }
 }
